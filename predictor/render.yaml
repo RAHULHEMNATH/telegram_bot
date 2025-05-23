@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: wingo-telegram-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python wingo_bot.py"
+    envVars:
+      - key:7649917363:AAGgqHvB8A4HZ83sW9BQjOvSjOgpwYO3oqc
+        sync: false
